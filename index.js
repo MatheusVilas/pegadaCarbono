@@ -7,6 +7,10 @@ const calcPegadaCarbono = require('./calcPegadaCarbono')
 //app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
+app.listen(3000, () => {
+    console.log('Servidor iniciado na porta 3000')
+})
+
 app.post('/pegadacarbono', (req, res) => {
 
     result = calcPegadaCarbono(
@@ -30,8 +34,4 @@ app.post('/pegadacarbono', (req, res) => {
         req.body.aterroResiduosKgDia
     )
     res.send(result)
-})
-
-app.listen(3000, () => {
-    console.log('Iniciado')
 })

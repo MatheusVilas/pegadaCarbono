@@ -1,4 +1,5 @@
-function calcPegadaCarbono(energiaKwhMes,
+function calcPegadaCarbono(
+    energiaKwhMes,
     gasCozinhaKgMes,
     gasNaturalM3Mes,
     veicPGasolinaKmMes,
@@ -57,7 +58,7 @@ function calcPegadaCarbono(energiaKwhMes,
         viagemNacionalKmMes: viagemNacionalKmMes,
         viagemInternacionalKmMes: viagemInternacionalKmMes,
         aterroResiduosKgDia:aterroResiduosKgDia,
-        
+
         TotalEmissaoTonCO2: TotalEmissaoTonCO2
     }
 }
